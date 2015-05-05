@@ -1,5 +1,5 @@
 # VideoLiveStreaming
-Demonstrates live video streaming from iPhone to server using Apple HLS format.. It is extremely rudimentary and in no sense is it ready for production. Notably it is lacking audio and the orientation is wrong and there are delays and pauses.
+Demonstrates live video streaming from iPhone to server using Apple HLS format. It is extremely rudimentary and in no sense is it ready for production. Notably it is lacking audio and the orientation is wrong and there are delays and pauses.
 
 Most of the action happens in Classes/ViewController.swift. First, set your endpoint. This can be a PHP file on your publicly-visible web host. 
 
