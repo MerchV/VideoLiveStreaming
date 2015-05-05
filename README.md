@@ -15,3 +15,5 @@ fclose($putdata);
 ?>
 
 You should modify it to make sure that arbitrary files cannot be put to your server such as a revised PHP file. This file should expect files called master.m3u8 and master0.ts, master1.ts, etc.
+
+The Xcode project includes https://github.com/OpenWatch/FFmpegWrapper and https://github.com/chrisballinger/FFmpeg-iOS already built. 
