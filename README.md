@@ -1,5 +1,5 @@
 # VideoLiveStreaming
-Demonstrates live video streaming from iPhone to server. It is extremely rudimentary and in no sense is it ready for production. Notably it is lacking audio and the orientation is wrong and there are delays and pauses.
+Demonstrates live video streaming from iPhone to server using Apple HLS format.. It is extremely rudimentary and in no sense is it ready for production. Notably it is lacking audio and the orientation is wrong and there are delays and pauses.
 
 Most of the action happens in Classes/ViewController.swift. First, set your endpoint. This can be a PHP file on your publicly-visible web host. 
 
@@ -16,4 +16,7 @@ fclose($putdata);
 
 You should modify it to make sure that arbitrary files cannot be put to your server such as a revised PHP file. This file should expect files called master.m3u8 and master0.ts, master1.ts, etc.
 
+Your server doesn't need anything special other than a way to accept HTTP PUT (or HTTP POST if you want to revise ViewController.swift). You don't need ffserver; you don't need Apple's media streaming tools. 
+
 The Xcode project includes https://github.com/OpenWatch/FFmpegWrapper and https://github.com/chrisballinger/FFmpeg-iOS already built. 
+
