@@ -5,6 +5,7 @@ Most of the action happens in Classes/ViewController.swift. First, set your endp
 
 Your PHP file can look like this:
 
+```
 <?php
 $putdata = fopen("php://input", "r");
 $fp = fopen($_GET['filename'], "w");
@@ -13,6 +14,7 @@ while ($data = fread($putdata, 1024))
 fclose($fp);
 fclose($putdata);
 ?>
+```
 
 You should modify it to make sure that arbitrary files cannot be put to your server such as a revised PHP file. This file should expect files called master.m3u8 and master0.ts, master1.ts, etc. This PHP file goes on your server, e.g., http://example.com/put.php. 
 
