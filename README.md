@@ -24,3 +24,4 @@ Once you've started capturing from your iPhone, after about 30 seconds, open VLC
 
 The Xcode project includes https://github.com/OpenWatch/FFmpegWrapper and https://github.com/chrisballinger/FFmpeg-iOS already built. 
 
+This project was written in 2015 using Swift 1 or 2 and won't build today without migrating it. 
